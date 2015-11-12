@@ -1,6 +1,6 @@
 {
   "name": "npm-inspect",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "CLI to inspect package.json of the current project",
   "bin": "bin/npm-inspect.js",
   "main": "bin/npm-inspect.js",
