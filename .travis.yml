@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- node
+- iojs
+- '4'
+
+script: make clean build
+
+deploy:
+  provider: npm
+  email: marcus@stade.se
+  api_key:
+    secure: y351ioAnzJ0BMOlK0x1PfJc3/m0Y8lxrwinXcT322n3z3qkzoWB2SYDC8Ge2ZyzLa597oblAplUp3FDaKGcfj9RbPmw67U/+T61EPtfYDv4M8EJiVUK++0fj0i/GuEYI9nPArB3Hjgu6ffSiq1P8qfr9Y1Skt2u2gcQjVgYhKADr23rS6b9wgsLWVEVLj11/n9gzz0WTOcy1WzH8gDdQo36NsaMrFTWJcNb7TlU/P7EtyLX9am1EJz87yLbwq1UqbrJbYNs6VxDrFhAVIbj3fxByibZvWCclbPrYiokyr8ZWE13qUq6O5NrubJNljLgRik1uQ2BPNFUkLqW9fENofD5ujQDXtScV0xQFN97VcCLuyClKUH404SE0Y5W2tezQ3MJV/r3ftkdUAVMTTOt2kHxLta8iJE0CNrNKKB+wFV9vHNXAgWdtI93XmaQmggnj+c7j+u9Z8azvASEPbXGexx9/RnTLdz7KMrWsqXDOmWl+L3xm5chMh2iGhwOmXVAiuSYmhl3AZBp2AW7tgOMy646wbwVNZ2xRV+z1J/Lro8W9H3GP2t2+0BYuUV8JyrrK0/DgZV74Bs3pikLxHccLCR5GzUV1LifVGubPrqoCfxOMNQLNQQXC9JX4oNZTXyGIt1Omjf4zwKZEWztWu/+iBNQ6vx2BEsXpvTBtiB1H7ig=
+  on:
+    tags: true
+    repo: mstade/npm-inspect

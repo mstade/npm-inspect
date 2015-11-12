@@ -1,0 +1,26 @@
+{
+  "name": "npm-inspect",
+  "version": "0.0.0",
+  "description": "CLI to inspect package.json of the current project",
+  "bin": "bin/npm-inspect.js",
+  "main": "bin/npm-inspect.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mstade/npm-inspect.git"
+  },
+  "author": "Marcus Stade <marcus@stade.se> (http://madebystade.se/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mstade/npm-inspect/issues"
+  },
+  "homepage": "https://github.com/mstade/npm-inspect#readme",
+  "devDependencies": {
+    "babel-cli": "6.1.4",
+    "babel-preset-es2015": "6.1.4"
+  },
+  "dependencies": {
+    "funkis": "0.2.0",
+    "npm": "3.3.12",
+    "read-package-json": "2.0.2"
+  }
+}
