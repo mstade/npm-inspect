@@ -4,7 +4,8 @@ node_js:
 - iojs
 - '4'
 
-script: make clean build
+install: make clean
+script: make build
 
 deploy:
   provider: npm
